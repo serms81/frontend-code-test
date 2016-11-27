@@ -1,0 +1,23 @@
+
+/* Main styles rules */
+
+#ingredients-wrapper > .no-ingredients,
+#ingredients-wrapper.empty > .has-ingredients {
+  display: none;
+}
+#ingredients-wrapper.empty > .no-ingredients,
+#ingredients-wrapper > .has-ingredients {
+  display: block;
+}
+
+.max-990 {
+  max-width: 990px;
+}
+
+/* Fixing DataTables style when mixing with Bootstrap styles*/
+
+table.dataTable thead .sorting,
+table.dataTable thead .sorting_asc,
+table.dataTable thead .sorting_desc {
+    background-image: none;
+}
